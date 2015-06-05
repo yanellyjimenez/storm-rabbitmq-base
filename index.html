@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Storm-rabbitmq : storm-rabbitmq">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Storm-rabbitmq</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/yanellyjm/storm-rabbitmq-base">View on GitHub</a>
+
+          <h1 id="project_title">Storm-rabbitmq</h1>
+          <h2 id="project_tagline">storm-rabbitmq</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/yanellyjm/storm-rabbitmq-base/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/yanellyjm/storm-rabbitmq-base/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>El propósito de este proyecto es probar la lógica de la topología en una configuración realista e identificar errores en la estabilidad del ambiente </p>
+
+<p>CONFIGURACIÓN CLUSTER STORM
+La instalación de Storm es la misma en cada nodo de Storm, solo se ajusta la configuración donde es requerido vía plantillas. 
+Las pruebas de integración trabajan a través de inyectar valores de entrada dentro del clúster a través de RabbitMQ.
+Existirá al final de la topología un Bolt que recibirá todas las tuplas de salida y las probará contra los valores esperados. Los valores de salida de la prueba sólo podrán ser accesados a través de la capa de persistencia, donde podrán ser leídos y validados. </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Storm-rabbitmq maintained by <a href="https://github.com/yanellyjm">yanellyjm</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
